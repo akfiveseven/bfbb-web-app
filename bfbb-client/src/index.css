@@ -34,7 +34,7 @@ body::before {
 }
 
 /* Ensure other content appears above the tint */
-body > * {
+body>* {
   position: relative;
   z-index: 2;
 }
@@ -42,7 +42,7 @@ body > * {
 /* Method 2: Using a linear gradient */
 body {
   margin: 0;
-  background-image: linear-gradient(rgba(1, 0, 72, 0.9), rgba(1, 0, 72, 0.9)), url('/img/bg-ocean.jpg');
+  background-image: linear-gradient(rgba(1, 0, 72, 0.85), rgba(1, 0, 72, 0.85)), url('/img/bg-ocean.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@ body {
 
 @font-face {
   font-family: 'Spongeboy';
-  src: url('/fonts/Spongeboy.otf') format('opentype');
+  src: url('/font/Spongeboy.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
