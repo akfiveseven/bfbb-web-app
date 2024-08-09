@@ -71,11 +71,11 @@ const Speedrunning = () => {
               allowFullScreen></iframe>
             <br /><br />
             <div className=''>
-              <Text className='font-bob text-center inline'>by </Text>
+              <Text className='font-bob text-center inline'>by</Text>&nbsp;&nbsp;
               <Text className='font-bob text-center inline text-yellow'>
-                SHiFT 
-              </Text>
-              <Text className='font-bob text-center inline'>on </Text>
+                SHiFT
+              </Text>&nbsp;&nbsp;
+              <Text className='font-bob text-center inline'>on</Text>&nbsp;&nbsp;&nbsp;
               <Text className='font-bob text-center inline text-yellow'>
                 July 19, 2024
               </Text>
