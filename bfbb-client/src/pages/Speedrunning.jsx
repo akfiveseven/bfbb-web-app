@@ -24,14 +24,14 @@ const Speedrunning = () => {
             <br /><br />
 
             <Text className='!text-base'>
-              The community has grown significantly over the years, bringing 
-              together players from around the world who share a passion for 
-              optimizing gameplay, discovering glitches, and mastering 
-              intricate techniques to achieve the fastest times. The 
-              speedrunning scene for this beloved platformer is characterized 
-              by its collaborative spirit, with runners frequently sharing 
-              strategies, routing tips, and new discoveries through forums, 
-              Discord channels, live streaming platforms, and now, this 
+              The community has grown significantly over the years, bringing
+              together players from around the world who share a passion for
+              optimizing gameplay, discovering glitches, and mastering
+              intricate techniques to achieve the fastest times. The
+              speedrunning scene for this beloved platformer is characterized
+              by its collaborative spirit, with runners frequently sharing
+              strategies, routing tips, and new discoveries through forums,
+              Discord channels, live streaming platforms, and now, this
               website.
             </Text>
 
@@ -39,10 +39,10 @@ const Speedrunning = () => {
 
 
             <Text className='!text-base'>
-              Community-organized events and competitions, such as marathons 
-              and races, further enhance the camaraderie and excitement 
-              within this vibrant community, celebrating not just the game 
-              itself but the collective effort to push the boundaries of what 
+              Community-organized events and competitions, such as marathons
+              and races, further enhance the camaraderie and excitement
+              within this vibrant community, celebrating not just the game
+              itself but the collective effort to push the boundaries of what
               is possible in speedrunning.
             </Text>
 
@@ -52,12 +52,12 @@ const Speedrunning = () => {
           <div className='hidden xl:block items-center text-center'>
             <Header label='Any% World Record' className='text-yellow' />
             <br /><br />
-            <iframe className='rounded-xl' 
-              width="600" 
-              height="315" 
-              src="https://www.youtube.com/embed/s467wu5qtSk?si=j1jb2vw0h4qnLZoJ" 
-              title="YouTube video player" 
-              frameBorder="0" 
+            <iframe className='rounded-xl'
+              width="625"
+              height="315"
+              src="https://www.youtube.com/embed/s467wu5qtSk?si=j1jb2vw0h4qnLZoJ"
+              title="YouTube video player"
+              frameBorder="0"
               allow="
                 accelerometer; 
                 autoplay; 
@@ -66,8 +66,8 @@ const Speedrunning = () => {
                 gyroscope; 
                 picture-in-picture; 
                 web-share
-              " 
-              referrerPolicy="strict-origin-when-cross-origin" 
+              "
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen></iframe>
             <br /><br />
             <div className=''>

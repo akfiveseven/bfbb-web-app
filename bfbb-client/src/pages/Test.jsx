@@ -1,0 +1,99 @@
+import { useState } from "react";
+import { Text } from "../components/Typography";
+import { PageContent } from "../components/PageContent";
+
+const Test = () => {
+
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      <nav className='
+        md:hidden 
+        bg-[#010054] 
+        text-white 
+        flex 
+        p-[1rem] 
+        items-center 
+        overflow-hidden 
+        top-[5rem] 
+        min-h-[2rem] 
+        w-full 
+        sticky
+        justify-between
+        z-10 
+        border-t-2
+        border-b-2
+        border-gray-800
+        '
+      >
+
+        <div className='' onClick={() => setOpen(!open)}>
+          <svg
+            className='w-[2rem] h-[2rem]'
+            fill='none'
+            stroke='#FFFFFF'
+            viewBox='0 0 24 24'
+            xmlns='https://www.w3.org/2000/svg'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth='2'
+              d='M4 6h16M4 12h16M4 18h16'
+            ></path>
+          </svg>
+        </div>
+
+      </nav>
+
+      <div className="flex min-h-[calc(100vh-9rem)] md:hidden z-0">
+        <div className={`font-bob bg-[#010054] ${open ? "w-48 p-8 pt-8" : "w-0"} duration-300 relative`}>
+
+
+          <div className={`${open ? "sticky" : "hidden"} font-bob text-md`}>
+            <Text className=''>Strats</Text>
+            <Text className=''>Routes</Text>
+            <Text className=''>Guides</Text>
+            <Text className=''>Glossary</Text>
+            <Text className=''>Resources</Text>
+          </div>
+
+        </div>
+
+        <div className='flex-1 overflow-auto max-h-[calc(100vh-9rem)]'>
+          <PageContent className=''>
+            {/* add content here */}
+          </PageContent>
+
+        </div>
+      </div>
+
+      <div className='hidden md:flex min-h-[calc(100vh-5rem)]'>
+        <div className={`font-bob bg-[#010035] pt-8`}>
+
+          <div className={`font-bob px-8`}>
+            <Text className=''>Strats</Text>
+            <br />
+            <Text className=''>Routes</Text>
+            <br />
+            <Text className=''>Guides</Text>
+            <br />
+            <Text className=''>Glossary</Text>
+            <br />
+            <Text className=''>Resources</Text>
+          </div>
+
+        </div>
+
+        <div className='flex-1 overflow-auto !max-h-[calc(100vh-5rem)]'>
+          <PageContent className=''>
+            {/* add content here */}
+          </PageContent>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export { Test }

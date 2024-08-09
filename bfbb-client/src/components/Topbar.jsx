@@ -7,6 +7,7 @@ import NavLogo from '/img/bfbb-community-logo.png';
 const MenuContext = createContext();
 
 const Topbar = () => {
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -25,9 +26,9 @@ const Topbar = () => {
           sticky 
           top-0 
           min-h-[5rem] 
-          max-h-[4rem] 
           w-full 
-          justify-between
+          justify-between 
+          z-10
         '
       >
         <img src={NavLogo} className='align-middle max-h-12'></img>
@@ -70,22 +71,16 @@ const MenuToggle = () => {
   const { toggleMenu } = useContext(MenuContext);
 
   return (
-    <div 
-      className='md:hidden bg-transparent border-none text-white text-[1.5rem]' 
+    <div
+      className='md:hidden bg-transparent border-none text-white text-[1.5rem]'
       onClick={toggleMenu}>
       <svg
         className='w-[2rem] h-[2rem]'
-        fill='none'
-        stroke='#FFFFFF'
-        viewBox='0 0 24 24'
-        xmlns='https://www.w3.org/2000/svg'
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          strokeLinecap='round'
-          strokeLinejoin='round'
-          strokeWidth='2'
-          d='M4 6h16M4 12h16M4 18h16'
-        ></path>
+        <circle cx="12" cy="6" r="2" fill="currentColor" />
+        <circle cx="12" cy="12" r="2" fill="currentColor" />
+        <circle cx="12" cy="18" r="2" fill="currentColor" />
       </svg>
     </div>
   );
@@ -102,16 +97,18 @@ const MenuItems = () => {
         transition-all 
         duration-300 
         ease-in-out 
-        ${isOpen ? 
-          'block !bg-[#02006C] sticky md:!flex !max-h-screen !opacity-100' : 
-          '!max-h-0 !opacity-0 pointer-events-none'
-        }
+        ${isOpen ?
+          'block md:!hidden !bg-[#02006C] sticky md:!flex !max-h-screen !opacity-100' :
+          'block !md:hidden !max-h-0 !opacity-0 pointer-events-none'
+      }
       `
     }>
 
+      <hr className='border-t border-solid border-[#30303D]' />
       <NavLink label='Home' route='/' />
       <hr className='border-t border-solid border-[#30303D]' />
       <NavLink label='Speedrunning' route='/speedrun' />
+      <hr className='border-t border-solid border-[#30303D]' />
 
     </div>
   );
