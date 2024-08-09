@@ -98,8 +98,8 @@ const MenuItems = () => {
         duration-300 
         ease-in-out 
         ${isOpen ?
-          'block md:!hidden !bg-[#02006C] sticky md:!flex !max-h-screen !opacity-100' :
-          'block !md:hidden !max-h-0 !opacity-0 pointer-events-none'
+        'block md:!hidden !bg-[#010035] sticky md:!flex !max-h-screen !opacity-100' :
+        'block !md:hidden !max-h-0 !opacity-0 pointer-events-none'
       }
       `
     }>

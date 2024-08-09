@@ -48,14 +48,18 @@ const Test = () => {
       </nav>
 
       <div className="flex min-h-[calc(100vh-9rem)] md:hidden z-0">
-        <div className={`font-bob bg-[#010054] ${open ? "w-48 p-8 pt-8" : "w-0"} duration-300 relative`}>
+        <div className={`font-bob bg-[#010035] ${open ? "w-48 p-8 pt-8" : "w-0"} duration-300 relative`}>
 
 
           <div className={`${open ? "sticky" : "hidden"} font-bob text-md`}>
             <Text className=''>Strats</Text>
+            <hr className='border-t border-solid border-[#30303D] my-4' />
             <Text className=''>Routes</Text>
+            <hr className='border-t border-solid border-[#30303D] my-4' />
             <Text className=''>Guides</Text>
+            <hr className='border-t border-solid border-[#30303D] my-4' />
             <Text className=''>Glossary</Text>
+            <hr className='border-t border-solid border-[#30303D] my-4' />
             <Text className=''>Resources</Text>
           </div>
 
@@ -74,13 +78,13 @@ const Test = () => {
 
           <div className={`font-bob px-8`}>
             <Text className=''>Strats</Text>
-            <br />
+            <hr className='border-t border-solid border-[#30303D] my-4' />
             <Text className=''>Routes</Text>
-            <br />
+            <hr className='border-t border-solid border-[#30303D] my-4' />
             <Text className=''>Guides</Text>
-            <br />
+            <hr className='border-t border-solid border-[#30303D] my-4' />
             <Text className=''>Glossary</Text>
-            <br />
+            <hr className='border-t border-solid border-[#30303D] my-4' />
             <Text className=''>Resources</Text>
           </div>
 
