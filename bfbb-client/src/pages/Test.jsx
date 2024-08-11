@@ -28,7 +28,7 @@ const Test = () => {
         '
       >
 
-        <div className='' onClick={() => setOpen(!open)}>
+        <div className='flex items-center' onClick={() => setOpen(!open)}>
           <svg
             className='w-[2rem] h-[2rem]'
             fill='none'
@@ -43,12 +43,20 @@ const Test = () => {
               d='M4 6h16M4 12h16M4 18h16'
             ></path>
           </svg>
+          &nbsp;
+          &nbsp;
+
+
+          <Text className='font-mono text-base !text-gray-400'>Speedrun &gt;</Text>
+          <Text className='font-mono text-base'>&nbsp;Strats</Text>
+
         </div>
 
       </nav>
 
+      {/* small screen sizes */}
       <div className="flex min-h-[calc(100vh-9rem)] md:hidden z-0">
-        <div className={`font-bob bg-[#010035] ${open ? "w-48 p-8 pt-8" : "w-0"} duration-300 relative`}>
+        <div className={`font-bob bg-[#010035] ${open ? "w-48 p-8 pt-8" : "w-0"} duration-300 `}>
 
 
           <div className={`${open ? "sticky" : "hidden"} font-bob text-md`}>
@@ -68,6 +76,37 @@ const Test = () => {
         <div className='flex-1 overflow-auto max-h-[calc(100vh-9rem)]'>
           <PageContent className=''>
             {/* add content here */}
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
           </PageContent>
 
         </div>
@@ -93,6 +132,37 @@ const Test = () => {
         <div className='flex-1 overflow-auto !max-h-[calc(100vh-5rem)]'>
           <PageContent className=''>
             {/* add content here */}
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
+            <p>Hi</p>
           </PageContent>
         </div>
       </div>

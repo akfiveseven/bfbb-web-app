@@ -6,7 +6,7 @@ const Speedrunning = () => {
   return (
     <>
       <PageContent className='text-white lg:items-center'>
-        <div className=''>
+        <div className='grid grid-cols-1 xl:grid-cols-2 xl:gap-8 2xl:grid-cols-2'>
           <div>
             <Container className='lg:bg-transparent'>
               <Header label="About" className='text-center text-yellow' />
@@ -47,7 +47,7 @@ const Speedrunning = () => {
             <Container className='xl:bg-transparent'>
               <Header label='Any% World Record' className='text-center text-yellow' />
               <LineBreak />
-              <LineBreak className='hidden 2xl:block' />
+              {/* <LineBreak className='hidden 2xl:block' /> */}
               <iframe className='rounded-xl mx-auto w-[300px] h-[150px] md:w-[625px] md:h-[315px]'
                 width="625"
                 height="315"
