@@ -6,7 +6,7 @@ const Speedrunning = () => {
   return (
     <>
       <PageContent className='text-white lg:items-center'>
-        <div className='grid grid-cols-1 xl:grid-cols-2 xl:gap-8 2xl:grid-cols-1'>
+        <div className=''>
           <div>
             <Container className='lg:bg-transparent'>
               <Header label="About" className='text-center text-yellow' />
