@@ -1,10 +1,10 @@
 const Header = ({ label, className }) => {
   return (
-    <h1 
-      className={`font-bob text-2xl text-white md:text-4xl 
+    <h1
+      className={`font-bob text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl
       ${className ? className : ''}`}
     >
-        {label}
+      {label}
     </h1>
   );
 };
@@ -12,13 +12,17 @@ const Header = ({ label, className }) => {
 
 const Text = ({ children, className }) => {
   return (
-    <p 
-      className={`text-white text-lg md:text-2xl 
-      ${className ? className : ''}`}
+    <p
+      className={`text-white text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-4xl ${className ? className : ''}`}
+    // className={`text-white text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 2xl:text-5xl ${className ? className : ''}`}
     >
       {children}
     </p>
   );
 };
 
-export { Header, Text }
+const LineBreak = ({ className }) => {
+  return <br className={`${className ? className : ''}`} />
+};
+
+export { Header, Text, LineBreak }

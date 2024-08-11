@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <>
-      <PageContent className='items-center justify-center text-center !m-0'>
+      <PageContent className='!items-center justify-center text-center'>
         <div className='animate-fade-in-up'>
 
           <div>
