@@ -6,7 +6,7 @@ const PageContent = ({ children, className }) => {
       className={`flex min-h-[calc(100vh-5rem)] ${className ? className : ''}`}
     >
 
-      <div className={`text-white my-4 md:my-8 mx-auto`}>
+      <div className={`text-white my-0 md:my-8 mx-auto`}>
         {children}
       </div>
 
