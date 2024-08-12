@@ -13,7 +13,7 @@ const Header = ({ label, className }) => {
 const Text = ({ children, className }) => {
   return (
     <p
-      className={`text-white text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl ${className ? className : ''}`}
+      className={`text-white text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-4xl ${className ? className : ''}`}
     // className={`text-white text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 2xl:text-5xl ${className ? className : ''}`}
     >
       {children}

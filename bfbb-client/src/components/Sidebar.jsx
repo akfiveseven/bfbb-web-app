@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Text } from "../components/Typography";
 import { PageContent } from "../components/PageContent";
+import { LineBreak } from "../components/Typography";
 
 const Sidebar = ({ children, menu }) => {
 
@@ -61,13 +62,17 @@ const Sidebar = ({ children, menu }) => {
           {menu === 'speedrun' &&
             <div className={`${isOpen ? "sticky" : "hidden"} font-bob text-md`}>
               <Text className=''>Strats</Text>
-              <hr className='border-t border-solid border-[#30303D] my-4' />
+              <LineBreak />
+              {/* <hr className='border-t border-solid border-[#30303D] my-4' /> */}
               <Text className=''>Routes</Text>
-              <hr className='border-t border-solid border-[#30303D] my-4' />
+              <LineBreak />
+              {/* <hr className='border-t border-solid border-[#30303D] my-4' /> */}
               <Text className=''>Guides</Text>
-              <hr className='border-t border-solid border-[#30303D] my-4' />
+              <LineBreak />
+              {/* <hr className='border-t border-solid border-[#30303D] my-4' /> */}
               <Text className=''>Glossary</Text>
-              <hr className='border-t border-solid border-[#30303D] my-4' />
+              <LineBreak />
+              {/* <hr className='border-t border-solid border-[#30303D] my-4' /> */}
               <Text className=''>Resources</Text>
             </div>
           }
@@ -86,13 +91,17 @@ const Sidebar = ({ children, menu }) => {
           {menu === 'speedrun' &&
             <div className={`font-bob px-8`}>
               <Text className=''>Strats</Text>
-              <hr className='border-t border-solid border-[#30303D] my-4' />
+              <LineBreak />
+              {/* <hr className='border-t border-solid border-[#30303D] my-4' /> */}
               <Text className=''>Routes</Text>
-              <hr className='border-t border-solid border-[#30303D] my-4' />
+              <LineBreak />
+              {/* <hr className='border-t border-solid border-[#30303D] my-4' /> */}
               <Text className=''>Guides</Text>
-              <hr className='border-t border-solid border-[#30303D] my-4' />
+              <LineBreak />
+              {/* <hr className='border-t border-solid border-[#30303D] my-4' /> */}
               <Text className=''>Glossary</Text>
-              <hr className='border-t border-solid border-[#30303D] my-4' />
+              <LineBreak />
+              {/* <hr className='border-t border-solid border-[#30303D] my-4' /> */}
               <Text className=''>Resources</Text>
             </div>
           }
