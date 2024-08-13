@@ -12,7 +12,7 @@ const Speedrunning = () => {
 
   const location = useLocation();
   const [tab, setTab] = useState('');
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search)
@@ -26,9 +26,9 @@ const Speedrunning = () => {
 
   return (
     <>
-      <Sidebar menu='speedrun'>
-        {tab === '' &&
-          <div className='mx-auto'>
+      <Sidebar menu='speedrun' tab={tab}>
+        {tab === 'about' &&
+          <div className=''>
             <About />
           </div>
         }
