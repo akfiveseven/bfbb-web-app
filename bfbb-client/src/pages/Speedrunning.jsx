@@ -27,7 +27,7 @@ const Speedrunning = () => {
   return (
     <>
       <Sidebar menu='speedrun' tab={tab}>
-        {tab === 'about' &&
+        {tab === '' &&
           <div className=''>
             <About />
           </div>

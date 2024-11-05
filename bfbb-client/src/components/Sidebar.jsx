@@ -46,6 +46,12 @@ const Sidebar = ({ children, menu, tab }) => {
           &nbsp;
           &nbsp;
 
+          {tab == '' &&
+            <>
+              <Text className='font-mono text-base !text-gray-400'>Speedrun &gt;</Text>
+              <Text className='font-mono text-base text-yellow'>&nbsp;About</Text>
+            </>
+          }
 
           {tab !== '' &&
             <Text className='font-mono text-base !text-gray-400'>Speedrun &gt;</Text>
