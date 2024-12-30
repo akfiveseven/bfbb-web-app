@@ -1,5 +1,3 @@
-
-
 const Table = ({ children, className }) => {
   return (
     <div className='text-white my-table-container'>
